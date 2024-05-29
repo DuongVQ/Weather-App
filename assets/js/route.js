@@ -13,7 +13,7 @@ const defaultLocation = "#/weather?lat=51.5073219&lon=-0.1276474" // London
 const currentLocation = function() {
     window.navigator.geolocation.getCurrentPosition(res => {
         const {latitude, lonitude} = res.coords;
-        updateWeather(`lat=${latitude}`, `lon=${lonitude}`);
+        updateWeather(`lat=21.0278`, `lon=105.8342`);
     }, err => {
         window.location.hash = defaultLocation;
     });
